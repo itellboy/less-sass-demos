@@ -1,0 +1,19 @@
+$fontSize: 12px;
+$bgColor: #ff0000;
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  background: #fff;
+  .nav {
+    font-size: $fontSize + 2px;
+  }
+  .content {
+    background: lighten($bgColor, 45%);
+    &:hover {
+      background: lighten($bgColor, 40%);
+    }
+  }
+}

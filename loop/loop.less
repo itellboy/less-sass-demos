@@ -1,0 +1,8 @@
+.get-col(@n) when(@n > 0) {
+  .col-@{n} {
+    width: 100% / 12 * @n;
+  }
+  .get-col(@n - 1);
+}
+
+.get-col(12);

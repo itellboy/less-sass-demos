@@ -1,0 +1,27 @@
+@fontSize: 12px;
+@bgColor: #ff0000;
+.block(@fontSize) {
+  border: 1px solid red;
+  font-size: @fontSize;
+  box-shadow: 0 0 0 5px black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  background: #fff;
+  .nav {
+    font-size: @fontSize + 2px;
+    .block(@fontSize)
+  }
+  .content {
+    background: lighten(@bgColor, 45%);
+    &:hover {
+      background: lighten(@bgColor, 40%);
+      .block(@fontSize)
+    }
+  }
+}

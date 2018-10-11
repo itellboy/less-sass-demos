@@ -1,0 +1,16 @@
+{
+  "name": "less-sass-demos",
+  "version": "1.0.0",
+  "description": "less-sass-demos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "less": "./node_module/.bin/lessc"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "less": "^3.8.1",
+    "node-sass": "^4.9.3"
+  }
+}

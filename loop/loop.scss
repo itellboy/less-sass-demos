@@ -1,0 +1,10 @@
+@mixin get-col($n) {
+  @if $n>0 {
+    col-#{$n} {
+      width: 100% / 12 * $n;
+    }
+    @include get-col($n - 1);
+  }
+}
+
+@include get-col(12);
